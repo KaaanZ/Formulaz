@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Formularz</title>
 </head>
 <body>
-    <div class="inputs">
+
+    <form action="mailto:xxanteqxx@gmail.com" method="post" class="inputs">
             <h1>Mail</h1>
-        <input type="text" id="usersmail"> 
+        <input type="email" id="usersmail"> 
             <h1>Name</h1>
         <input type="text" id="name">
             <h1>Surename</h1>
         <input type="text" id="surename"> 
             <h1>Age</h1>
         <input type="number" id="age">
-        <form action="mailto:xxanteqxx@gmail.com" method="post" id="wynik">
-            <button id="guzik" onclick="sendmail()">Send</button> 
-            </form>
-    </div>
+        <input type="submit" id="guzik" onclick="agecheck()" value="Send" >
+            
+
+    </form>
 
        <script src="script.js">
+
        </script>
 </body>
 </html>
